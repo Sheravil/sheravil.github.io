@@ -1,17 +1,13 @@
+import React from "react";
 
-import './App.css';
-import LabTabs from './components/AboutMe';
-import ResponsiveAppBar from './components/navbar';
+import AboutMe from "./components/AboutMe";
+import Navbar from "./components/Navbar";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-    <ResponsiveAppBar />
-    <div>
-    <LabTabs />
-    </div>
-    </div>
+    <>
+      <Navbar />
+      <AboutMe />
+    </>
   );
 }
-
-export default App;
