@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Products", "Pricing", "Test2"];
+const pages = ["Products", "Pricing", "Test"];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
