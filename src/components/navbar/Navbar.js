@@ -11,7 +11,11 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Products", "Pricing", "Test2"];
+const pages = [
+  { name: "Hi There", id: "hiThere" },
+  { name: "About Me", id: "aboutMe" },
+  { name: "About Me", id: "aboutMe" },
+];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -24,8 +28,13 @@ export default function Navbar() {
     setAnchorElNav(null);
   };
 
+  const handleScroll = (id) => {
+    const section = document.querySelector(`#${id}`);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#5F7161" }}>
+    <AppBar position="sticky" sx={{ backgroundColor: "#5F7161" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -76,8 +85,8 @@ export default function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={() => handleScroll(page.id)}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -103,11 +112,11 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.name}
+                onClick={() => handleScroll(page.id)}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
