@@ -42,9 +42,22 @@ export default function HiThere() {
           </Grid>
           <Grid item xs={6} fontSize={30}>
             <p>Front-End Developer</p>
-            <p style={{ fontSize: "20px", marginTop: "-30px" }}>
-              emincuha@gmail.com
-            </p>
+            <div
+              style={{
+                fontSize: "20px",
+                marginTop: "-30px",
+              }}
+            >
+              <a
+                href="mailto:emincuha@gmail.com"
+                style={{
+                  color: "#5F7161",
+                  textDecoration: "none",
+                }}
+              >
+                emincuha@gmail.com
+              </a>
+            </div>
           </Grid>
           <Grid item xs={6} textAlign="left">
             <LinkedInIcon fontSize="large" />
