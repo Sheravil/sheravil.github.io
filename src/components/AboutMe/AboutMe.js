@@ -5,17 +5,18 @@ import Grid from "@mui/material/Grid";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Avatar from "@mui/material/Avatar";
-import { color } from "@mui/system";
-import { BorderColor } from "@mui/icons-material";
+
+import Profilİmage from "./profil.jpg";
+
 export default function AboutMe() {
   return (
-    <Box height="95vh" bgcolor="rgba(50, 100, 83, 0.4)" fontFamily={"Arial"}>
+    <Box height="95vh" bgcolor="rgba(239, 234, 216, 0.5)" fontFamily={"Arial"}>
       <Grid
         container
         height="100%"
         alignItems="center"
         padding={30}
-        color={"darkcyan"}
+        color={"#5F7161"}
         // color={"rgba(234, 253, 252,0.8)"}
       >
         <Grid container item xs={8} justifyContent="center" alignItems="center">
@@ -53,7 +54,8 @@ export default function AboutMe() {
         <Grid item xs={4}>
           <Avatar
             alt="Remy Sharp"
-            src="https://media.licdn.com/dms/image/D4D03AQG9mkoN9LNp2w/profile-displayphoto-shrink_800_800/0/1670255372337?e=1677715200&v=beta&t=SHia7ha4Rd1tbEWMpzZY-wg2EnnCmv7AeiExpDvPsc8"
+            // src="https://media.licdn.com/dms/image/D4D03AQG9mkoN9LNp2w/profile-displayphoto-shrink_800_800/0/1670255372337?e=1677715200&v=beta&t=SHia7ha4Rd1tbEWMpzZY-wg2EnnCmv7AeiExpDvPsc8"
+            src={Profilİmage}
             sx={{
               width: 350,
               height: 350,
