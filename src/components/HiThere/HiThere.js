@@ -8,7 +8,7 @@ import Avatar from "@mui/material/Avatar";
 
 import Profilİmage from "./profil.jpg";
 
-export default function AboutMe() {
+export default function HiThere() {
   return (
     <Box height="95vh" bgcolor="rgba(239, 234, 216, 0.5)" fontFamily={"Arial"}>
       <Grid

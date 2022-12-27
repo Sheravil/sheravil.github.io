@@ -1,13 +1,13 @@
 import React from "react";
 
-import AboutMe from "./components/AboutMe";
+import HiThere from "./components/HiThere";
 import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <AboutMe />
+      <HiThere />
     </>
   );
 }
