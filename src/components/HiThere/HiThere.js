@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -6,10 +6,41 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/joy/IconButton";
+import Typewriter from "typewriter-effect/dist/core";
 
 import Profilİmage from "./profil.jpg";
 
 export default function HiThere() {
+  useEffect(() => {
+    var app = document.getElementById("tester");
+
+    const typewriter = new Typewriter(app, {
+      loop: true,
+      cursor: "/>",
+    });
+
+    typewriter
+      .typeString("<Front-End Developer ")
+      .pauseFor(500)
+      .deleteAll()
+      .typeString("<React & Material UI ")
+      .pauseFor(500)
+      .deleteAll()
+      .typeString("<JavaScript ")
+      .pauseFor(500)
+      .deleteAll()
+      .typeString("<HTML/CSS ")
+      .pauseFor(500)
+      .deleteAll()
+      .typeString("<BootStrap 4/5 ")
+      .pauseFor(500)
+      .deleteAll()
+      .typeString("<Connect with me → ")
+      .pauseFor(5000)
+      .deleteAll()
+      .start();
+  }, []);
+
   return (
     <Box
       id="hiThere"
@@ -44,7 +75,6 @@ export default function HiThere() {
             item
             xs={12}
             display="flex"
-            alignSelf={{ xs: "center", md: "flex-start" }}
             textAlign={{ xs: "center", md: "left" }}
             fontSize={30}
           >
@@ -55,32 +85,28 @@ export default function HiThere() {
           <Grid
             item
             xs={12}
-            alignSelf={{ xs: "center", md: "flex-start" }}
             textAlign={{ xs: "center", md: "left" }}
-            fontSize={60}
             sx={{
-              marginLeft: { xs: -10.6, lg: -17.1 },
-              fontSize: { xs: 30, lg: 60 },
-              margin: { xs: -10, lg: -15 },
+              fontSize: { xs: 30, md: 40, lg: 60 },
+              margin: { xs: -10, md: -8, lg: -12 },
+              marginLeft: { xs: -10.6, md: -9, lg: -14 },
             }}
-            margin={-15}
-            marginLeft={-17.1}
           >
             <h1>Emin Çuha</h1>
           </Grid>
           <Grid
             item
             xs={12}
-            md={5}
-            fontSize={30}
-            alignSelf={{ xs: "center", md: "flex-start" }}
+            md={8}
+            margin={{ xs: 2, md: 0 }}
+            fontSize={{ xs: 20, md: 20, lg: 25 }}
             textAlign={{ xs: "center", md: "left" }}
           >
-            <p>Front-End Developer</p>
+            <p id="tester"></p>
             <div
               style={{
                 fontSize: "20px",
-                marginTop: "-30px",
+                marginTop: "-20px",
               }}
             >
               <a
@@ -97,7 +123,7 @@ export default function HiThere() {
           <Grid
             item
             xs={12}
-            md={7}
+            md={4}
             textAlign={{ xs: "center", md: "left" }}
             sx={{
               display: "flex",
@@ -105,7 +131,6 @@ export default function HiThere() {
               flexWrap: "wrap",
               alignItems: "center",
               justifyContent: { xs: "center", md: "flex-start" },
-              marginTop: "30px",
             }}
           >
             <a

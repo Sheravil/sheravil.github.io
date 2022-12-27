@@ -15,7 +15,7 @@ export default function AboutMe() {
         container
         alignItems="center"
         padding={30}
-        sx={{ padding: { xs: 1, md: 10, lg: 20 } }}
+        sx={{ padding: { xs: 5, md: 10, lg: 20 } }}
         color={"#5F7161"}
         // color={"rgba(234, 253, 252,0.8)"}
       >
