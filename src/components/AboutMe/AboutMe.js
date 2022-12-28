@@ -21,7 +21,8 @@ const TEXTS = {
           Görsel olarak çekici web sitesi oluşturma isteği olan bir Ön-Uç
           geliştiricisiyim.HTML , CSS ve BootStrap konusunda güçlü bir temele
           sahibim. React ve Material UI kullanıyorum . Bir geliştirici olarak
-          her zaman kendimi daha ileri seviyeye taşımaya çalışıyorum.
+          kendimi daha ileri seviyeye taşımak için yeni teknolojileri
+          araştırıyor ve öğreniyorum.
         </p>
       </>
     ),
