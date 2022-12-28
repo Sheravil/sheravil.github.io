@@ -16,7 +16,7 @@ const TEXTS = {
   body: {
     TR: (
       <>
-        <h4>Merhaba, benim adım Emin Çuha</h4>
+        <h4>Merhaba, ben Emin Çuha</h4>
         <p>
           Görsel olarak çekici web sitesi oluşturma isteği olan bir Ön-Uç
           geliştiricisiyim.HTML , CSS ve BootStrap konusunda güçlü bir temele
@@ -64,7 +64,7 @@ export default function AboutMe() {
         container
         alignItems="center"
         padding={30}
-        sx={{ padding: { xs: 5, md: 10, lg: 20 } }}
+        sx={{ padding: { xs: 3, md: 10, lg: 20 } }}
         color={"#5F7161"}
         // color={"rgba(234, 253, 252,0.8)"}
       >
