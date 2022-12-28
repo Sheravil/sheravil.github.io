@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sheravil.github.io/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -17,12 +18,15 @@
     "react-scripts": "5.0.1",
     "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
+
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"react-scripts build && touch ./build/.nojekyll",
+    "deploy": "gh-pages -d build -t true"
   },
   "eslintConfig": {
     "extends": [

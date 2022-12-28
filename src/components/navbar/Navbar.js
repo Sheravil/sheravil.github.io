@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 const pages = [
   { name: "Hi There", id: "hiThere" },
   { name: "About Me", id: "aboutMe" },
-  { name: "About Me", id: "aboutMe" },
+  // { name: "About Me", id: "aboutMe" },
 ];
 
 export default function Navbar() {
