@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Switch from "@mui/material/Switch";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import LinearBuffer from "../Material UI/LinearBuffer";
 
 const LANGUAGES = { TR: "TR", EN: "EN" };
 
@@ -60,6 +61,7 @@ export default function AboutMe() {
       bgcolor="rgba(239, 234, 216, 0.8)"
       fontFamily={"Arial"}
     >
+      <LinearBuffer />
       <Grid
         container
         alignItems="center"
