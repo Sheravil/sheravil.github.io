@@ -33,7 +33,7 @@ export default function ActionAreaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="500"
+          height={{ xs: 180, md: 500 }}
           image={RepairImg}
           sx={{ padding: "15px" }}
           display="flex"
@@ -67,6 +67,7 @@ export default function ActionAreaCard() {
                 color={"#5F7161"}
                 display="flex"
                 marginLeft={{ xs: 1, md: 5 }}
+                paddingTop="10px"
               >
                 This page will be active as soon as possible.
               </Typography>
