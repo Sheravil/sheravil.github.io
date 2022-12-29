@@ -40,19 +40,19 @@ export default function ActionAreaCard() {
         />
         <CardContent>
           <Grid container xs={12}>
-            <Grid xs={8}>
+            <Grid xs={12} lg={8}>
               <Typography
                 gutterBottom
                 variant="h1"
                 component="div"
                 color={"#5F7161"}
                 display="flex"
-                marginLeft={5}
+                marginLeft={{ xs: 1, md: 5 }}
               >
                 Repairs
               </Typography>
             </Grid>
-            <Grid xs={4}>
+            <Grid xs={12} lg={4}>
               <CircularProgress
                 disableShrink
                 variant="determinate"
@@ -66,7 +66,7 @@ export default function ActionAreaCard() {
                 variant="body1"
                 color={"#5F7161"}
                 display="flex"
-                marginLeft={5}
+                marginLeft={{ xs: 1, md: 5 }}
               >
                 This page will be active as soon as possible.
               </Typography>
