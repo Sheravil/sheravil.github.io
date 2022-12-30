@@ -25,7 +25,7 @@ export default function ActionAreaCard() {
   return (
     <Card
       sx={{
-        maxWidth: 900,
+        maxWidth: 750,
         backgroundColor: "rgba(0, 0, 0, 0)",
         boxShadow: "none",
       }}
